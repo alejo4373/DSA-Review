@@ -1,3 +1,3 @@
-## Practicing Understanding Space Complexity
+# Practicing Understanding Space Complexity
 
-See `main.js`
+See `lessonExamples.js` and complete the exercises in `exercises.js`
