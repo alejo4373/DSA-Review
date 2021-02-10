@@ -40,12 +40,12 @@ function linearTime(arr) {
 }
 
 function quadraticTime(arr) {
-  const total = 0
+  let total = 0
   for (let elemOne of arr) {
     for (let elemTwo of arr) {
-      // console.log(elemOne, elemTwo)
-      let sum = elemOne + elemTwo
-      total += sum
+      if (elemTwo === 'bye' && elemOne === 'world') {
+        console.log('bye and world found')
+      }
     }
   }
   return total;
@@ -63,13 +63,13 @@ function quadraticTime(arr) {
 // howLongDoesItTake(() => constantTime(f))
 // howLongDoesItTake(() => constantTime(e))
 
-howLongDoesItTake(() => linearTime(a))
-howLongDoesItTake(() => linearTime(b))
-howLongDoesItTake(() => linearTime(c))
-howLongDoesItTake(() => linearTime(d))
-howLongDoesItTake(() => linearTime(e))
-howLongDoesItTake(() => linearTime(f))
-howLongDoesItTake(() => linearTime(g))
+// howLongDoesItTake(() => linearTime(a))
+// howLongDoesItTake(() => linearTime(b))
+// howLongDoesItTake(() => linearTime(c))
+// howLongDoesItTake(() => linearTime(d))
+// howLongDoesItTake(() => linearTime(e))
+// howLongDoesItTake(() => linearTime(f))
+// howLongDoesItTake(() => linearTime(g))
 
 // n = arr.length = 3
 // combination of all pairs = n * n = 9
@@ -85,22 +85,29 @@ let ee = new Array(3 * ONE_THOUSAND)
 let ff = new Array(4 * ONE_THOUSAND)
 let gg = new Array(5 * ONE_THOUSAND)
 let hh = new Array(6 * ONE_THOUSAND)
-// let ii = new Array(7 * ONE_THOUSAND)
+let ii = new Array(7 * ONE_THOUSAND)
+let jj = new Array(8 * ONE_THOUSAND)
+let kk = new Array(9 * ONE_THOUSAND)
 
 // Fill those arrays
-cc.fill(6)
+cc.fill('hello')
 dd.fill('hello')
-ff.fill(8)
-ee.fill('sugkady92yy3y7901hdl')
-gg.fill('71')
-hh.fill(92)
+ff.fill('hello')
+ee.fill('hello')
+gg.fill('hello')
+hh.fill('hello')
+ii.fill('hello')
+jj.fill('hello')
+kk.fill('hello')
 
-// howLongDoesItTake(() => quadraticTime(aa))
-// howLongDoesItTake(() => quadraticTime(bb))
-// howLongDoesItTake(() => quadraticTime(cc))
-// howLongDoesItTake(() => quadraticTime(dd))
-// howLongDoesItTake(() => quadraticTime(ee))
-// howLongDoesItTake(() => quadraticTime(ff))
-// howLongDoesItTake(() => quadraticTime(gg))
-// howLongDoesItTake(() => quadraticTime(hh))
-// howLongDoesItTake(() => quadraticTime(ii))
+howLongDoesItTake(() => quadraticTime(aa))
+howLongDoesItTake(() => quadraticTime(bb))
+howLongDoesItTake(() => quadraticTime(cc))
+howLongDoesItTake(() => quadraticTime(dd))
+howLongDoesItTake(() => quadraticTime(ee))
+howLongDoesItTake(() => quadraticTime(ff))
+howLongDoesItTake(() => quadraticTime(gg))
+howLongDoesItTake(() => quadraticTime(hh))
+howLongDoesItTake(() => quadraticTime(ii))
+howLongDoesItTake(() => quadraticTime(jj))
+howLongDoesItTake(() => quadraticTime(kk))
