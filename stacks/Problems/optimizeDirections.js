@@ -35,6 +35,8 @@ const optimizeDirections = (directions) => {
 
 console.log(optimizeDirections(["NORTH", "EAST", "WEST", "SOUTH", "WEST", "SOUTH", "NORTH", "WEST"])) // ["WEST", "WEST"]
 console.log(optimizeDirections(["NORTH", "NORTH", "SOUTH", "SOUTH", "EAST"])) // ["EAST"]
-console.log(optimizeDirections(["NORTH", "NORTH", "SOUTH", "SOUTH", "EAST", "WEST"])) // []
 console.log(optimizeDirections(["NORTH", "EAST", "SOUTH", "NORTH", "EAST", "WEST"])) // ["NORTH", "EAST"]
 console.log(optimizeDirections(["EAST", "NORTH", "WEST", "SOUTH"])) // ["EAST", "NORTH", "WEST", "SOUTH"]
+console.log(optimizeDirections(["NORTH", "NORTH", "SOUTH", "SOUTH", "EAST", "WEST"])) // []
+console.log(optimizeDirections(["NORTH", "NORTH", "EAST", "WEST", "SOUTH", "SOUTH"])) // []
+console.log(optimizeDirections(["NORTH"])) // ["NORTH"]
